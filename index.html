@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birthday, Sara!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- falling plush toys, balloons and stars -->
+  <div id="rain" aria-hidden="true"></div>
+
+  <!-- pops up when the celebrate button is pressed -->
+  <div id="banner" aria-hidden="true">Happy Birthday, Sara! &#127881;</div>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="hero-text">
+      <p class="sheet-label">Sheet 01 &ndash; Birthday Elevation</p>
+      <h1>Happy Birthday, Sara!</h1>
+      <p class="lead">To the architect who designs beautiful spaces, and still keeps room on the shelf for every stuffed animal.</p>
+      <button id="celebrate" class="btn" type="button">Press to celebrate</button>
+      <p class="hint">Tap the teddy to fill in the drawing.</p>
+    </div>
+
+    <!-- Teddy drawn like a blueprint. Click it to "bring it to life". -->
+    <button class="teddy-wrap" id="teddy" type="button" aria-label="Teddy bear drawing. Press to colour it in.">
+      <svg viewBox="0 0 400 460" class="teddy" role="img" aria-hidden="true">
+        <!-- dimension lines -->
+        <g class="dim">
+          <line x1="40" y1="60" x2="40" y2="430"/>
+          <line x1="34" y1="60" x2="46" y2="60"/><line x1="34" y1="430" x2="46" y2="430"/>
+          <text x="30" y="250" transform="rotate(-90 30 250)" text-anchor="middle">height: 1 big hug</text>
+          <line x1="110" y1="36" x2="290" y2="36"/>
+          <line x1="110" y1="30" x2="110" y2="42"/><line x1="290" y1="30" x2="290" y2="42"/>
+          <text x="200" y="26" text-anchor="middle">ears: perfectly fluffy</text>
+        </g>
+        <!-- bear -->
+        <g class="bear">
+          <ellipse class="p-body"  cx="200" cy="340" rx="92" ry="98"/>
+          <ellipse class="p-belly" cx="200" cy="352" rx="56" ry="64"/>
+          <ellipse class="p-body"  cx="108" cy="318" rx="30" ry="52" transform="rotate(25 108 318)"/>
+          <ellipse class="p-body"  cx="292" cy="318" rx="30" ry="52" transform="rotate(-25 292 318)"/>
+          <ellipse class="p-body"  cx="140" cy="432" rx="42" ry="26"/>
+          <ellipse class="p-body"  cx="260" cy="432" rx="42" ry="26"/>
+          <circle  class="p-body"  cx="136" cy="100" r="34"/>
+          <circle  class="p-ear"   cx="136" cy="100" r="17"/>
+          <circle  class="p-body"  cx="264" cy="100" r="34"/>
+          <circle  class="p-ear"   cx="264" cy="100" r="17"/>
+          <circle  class="p-body"  cx="200" cy="170" r="80"/>
+          <ellipse class="p-belly" cx="200" cy="196" rx="38" ry="30"/>
+          <ellipse class="p-nose"  cx="200" cy="184" rx="13" ry="9"/>
+          <path    class="line"    d="M200 193 v10 M200 203 q-12 12 -22 4 M200 203 q12 12 22 4"/>
+          <circle  class="p-eye"   cx="168" cy="154" r="7"/>
+          <circle  class="p-eye"   cx="232" cy="154" r="7"/>
+          <path class="p-bow" d="M200 252 l-34 -20 v40 z M200 252 l34 -20 v40 z"/>
+          <circle class="p-bow" cx="200" cy="252" r="8"/>
+        </g>
+      </svg>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- ============ MESSAGE ============ -->
+    <section class="section message">
+      <h2>Design brief for a happy year</h2>
+      <div class="letter">
+        <p>Dear Sara,</p>
+        <p>Happy birthday! You build things that stand strong and look beautiful, and you do the same for everyone around you.</p>
+        <p>I hope this year has solid foundations, plenty of light, no last-minute client changes, and a very large collection of new stuffed animals.</p>
+        <p class="sign">With love,<br>Your brother Hassan</p>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section">
+      <h2>Our favorite moments</h2>
+      
+
+      <div class="gallery">
+        <figure><img src="assets/images/photo1.jpg" alt="Photo 1 of Sara" onerror="this.parentElement.classList.add('missing')"><figcaption>Detail A &ndash; Family</figcaption></figure>
+        <figure><img src="assets/images/photo2.jpg" alt="Photo 2 of Sara" onerror="this.parentElement.classList.add('missing')"><figcaption>Detail B &ndash; Celebrations</figcaption></figure>
+        <figure><img src="assets/images/photo3.jpg" alt="Photo 3 of Sara" onerror="this.parentElement.classList.add('missing')"><figcaption>Detail C &ndash; Beach</figcaption></figure>
+        <figure><img src="assets/images/photo4.jpg" alt="Photo 4 of Sara" onerror="this.parentElement.classList.add('missing')"><figcaption>Detail D &ndash; Looking Sharp</figcaption></figure>
+        <figure><img src="assets/images/photo5.jpg" alt="Photo 5 of Sara" onerror="this.parentElement.classList.add('missing')"><figcaption>Detail E &ndash; Travelling</figcaption></figure>
+        <figure><img src="assets/images/photo6.jpg" alt="Photo 6 of Sara" onerror="this.parentElement.classList.add('missing')"><figcaption>Detail F &ndash; Snow</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- ============ WISHES ============ -->
+    <section class="section">
+      <h2>Specifications for this year</h2>
+      <ul class="specs">
+        <li><span>Foundation</span> Health and happiness, built to last.</li>
+        <li><span>Structure</span> Projects that go exactly to plan.</li>
+        <li><span>Interior</span> One more cozy corner for a new plush friend.</li>
+        <li><span>Finish</span> Smiles on every day of the schedule.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="title-block">
+      <div><b>Project</b> Happy Birthday</div>
+      <div><b>Client</b> Sara</div>
+      <div><b>Drawn by</b> Hassan</div>
+      <div><b>Status</b> Approved with love</div>
+    </div>
+  </footer>
+
+  <canvas id="fireworks" aria-hidden="true"></canvas>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
